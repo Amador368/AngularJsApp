@@ -2,9 +2,6 @@
 
   var app = angular.module('gemStore', ['store-products']);
 
-  /*app.controller('StoreController', function() {
-    this.products = gems;
-  });*/
   app.controller('StoreController', ['$http', function ($http){
     var store = this;
     store.products = [];
@@ -23,13 +20,6 @@
     };
 
   });
-/*//services
-  app.controller('someController', ['$http', function ($http){
 
-  } ]);
-  app.controller('someController', ['$http', '$log', function ($http, $log){
-
-  } ]);
-*/
 
 })();
